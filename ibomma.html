@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat', sans-serif;
+
+        }
+
+        body {
+            background: #282828;
+            overflow-x: hidden;
+
+        }
+
+        nav {
+            background: #2c2e30;
+            display: flex;
+            text-align: right;
+            align-items: center;
+            height: 60px;
+            padding: 0 100px;
+        }
+
+        nav .logo {
+            cursor: pointer;
+        }
+
+        nav .nav-items {
+            display: flex;
+            flex: 1;
+            padding: 0 0 0 40px;
+            margin: 330px;
+        }
+
+        nav .nav-items a {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 5px;
+            margin-left: 15px;
+            display: flex;
+        }
+
+        nav .nav-items a i {
+            color: #368338e1;
+            padding: 5px;
+
+        }
+
+        nav form {
+            display: flex;
+            height: 40px;
+            padding: 2px;
+            background: #1e2326;
+            min-width: 175px !important;
+            border-radius: 30px;
+            border: 1px solid rgba(155, 155, 155, 0.2);
+
+        }
+
+        nav form .search-data {
+            width: 100%;
+            height: 100%;
+            padding: 0 10px;
+            color: #fff;
+            font-size: 17px;
+            border: none;
+            font-weight: 500;
+            background-color: nono;
+        }
+
+        nav form button {
+            padding: 0 15px;
+            color: #fff;
+            font-size: 17px;
+            background: #368338e1;
+            border: none;
+            border-top-right-radius: 17px;
+            border-bottom-right-radius: 17px;
+            cursor: pointer;
+        }
+
+        nav form button:hover {
+            background: #2d6b2fe1;
+        }
+
+        .content {
+            margin-top: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .content h1 {
+            justify-content: space-between;
+            letter-spacing: 10px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .content p {
+            margin-top: 30px;
+        }
+
+        .content p i {
+            color: #368338e1;
+        }
+
+        movie items {
+            width: 100%;
+            height: 10%;
+            margin-top: 30px;
+            margin-left: 1%;
+            padding: 20px;
+
+        }
+
+        .colomn {
+            float: left;
+            width: 16.66;
+            cursor: pointer;
+        }
+
+        .colomn img {
+            border-radius: 10px;
+        }
+
+        .row::after {
+            content: '';
+            clear: both;
+            display: table;
+
+        }
+
+        .colomn h4,
+        p {
+            color: white;
+        }
+
+        .colomn:hover {
+            scale: 1.1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../images/images.png" alt="logo">
+        </div>
+        <div class="nav-items">
+            <a href="#"><i class="fa-solid fa-user-group"></i>about</a>
+            <a href="#"><i class="fa-solid fa-bug"></i></i>bugreport</a>
+            <a href="#"><i class="fa-regular fa-envelope-open"></i></i>contact</a>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="search">
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+    <div class="content">
+        <h1>Where Quality & Clarity Matter</h1>
+        <p>watch / download telugu movies in an Excellent Quality at the smallest film size<br> Exclusity dessign and
+            developed for the smart phones, tables and pc</p>
+        <p><i class="fa-solid fa-star"></i>&nbsp;Remove the Browser cache,reload</p>
+    </div>
+    <br>
+    <section class="movie items">
+        <div class="row">
+            <div class="colomn">
+                <img src="../images/tiger.jpeg">
+                <h4>tiger</h4>
+                <p>2022</p>
+            </div>
+            <div class="colomn">
+                <img src="../images/warrior.jpeg">
+                <h4>Warrior</h4>
+                <p>2022</p>
+            </div>
+            <div class="colomn">
+                <img src="../images/khiladi.jpeg">
+                <h4>khiladi</h4>
+                <p>2022</p>
+            </div>
+            <div class="colomn">
+                <img src="../images/polishetty.jpeg">
+                <h4>Mr polishetty Ms polishetty</h4>
+                <p>2022</p>
+            </div>
+            <div class="colomn">
+                <img src="../images/rrr2.jpeg">
+                <h4>RRR</h4>
+                <p>2022</p>
+            </div>
+            <div class="colomn">
+                <img src="../images/pushpa.jpeg">
+                <h4>Pushpa</h4>
+                <p>2022</p>
+            </div>
+            <div class="colomn">
+                <img src="../images/sarakari vari patta.jpeg">
+                <h4>Sarkari vari patta</h4>
+                <p>2021</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
